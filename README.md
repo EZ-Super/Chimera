@@ -3,8 +3,7 @@ A skyblock Mod
 
 ## What's this mod do?
 * Helping people display the flare or Power Orb . 
-* Allow party members to use some leader commands. (ex: allinvite)
-* Some fun feature
+* Let party members to use some leader commands.
 * This mod is made for Tawianese
 * Use /chimera open Gui
 
