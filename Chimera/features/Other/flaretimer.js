@@ -74,7 +74,7 @@ register("renderOverlay",()=>{
 
     })
     if(flare.time<=0){
-        flare.type =0;
+        flare.type =-1;
     }
 })
 
