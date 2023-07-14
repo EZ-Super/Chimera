@@ -57,13 +57,10 @@ register("renderOverlay",()=>{
         if (type > flare.type) {
             flare.type = type;
             flare.time = flareTime;
-        } else if (type === flare.type) {
+        } else if (type === flare.type && flareTime > flare.time) {
             flare.time = flareTime;
         }
-        else if(type < flare.type){
-            flare.type = type;
-            flare.time = flareTime;
-        }
+
 
         let flaretype = ""
         if(flare.type===0) flaretype ="&a&lWarning";
