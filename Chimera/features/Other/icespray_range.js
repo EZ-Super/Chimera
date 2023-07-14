@@ -2,6 +2,11 @@ import gui from "../../config"
 import RenderLib from "../../../RenderLib";
 
 
+let avoidEntity = ["EntityArmorStand","EntityPlayerSP","EntityOtherPlayerMP","EntityItemFrame","EntityVillager","EntityXPOrb","EntityPainting","EntityArrow"
+                    ,"EntityFishHook","EntityFireworkRocket","EntityFallingBlock","EntityItem","EntityBoat","EntityMinecartEmpty","EntityMinecartTNT","EntityMinecartHopper"
+                    ,"EntityExpBottle"]
+
+
 register("renderWorld",()=>{
     if(!gui.icespray_range) return;
     let held_item = Player.getHeldItem()?.getName();
@@ -61,14 +66,15 @@ register("renderWorld",()=>{
     }
 
 
-
-
     let entities = World.getAllEntities();
 
     entities.find((mob)=>{
-        if(mob.getClassName()==="EntityArmorStand"||mob.getClassName()==="EntityPlayerSP") return;
+
+        for(let i=0;i<avoidEntity.length;i++)
+            if(mob.getClassName()===avoidEntity[i]) return;
 
         if(mob.distanceTo(px,py,pz)>7.5) return;
+       // ChatLib.chat(mob.getClassName())
         for(let i=0;i<blocksx.length;i++){
     
             if(parseInt(mob.getX())==parseInt(blocksx[i]) &&parseInt(mob.getZ())==parseInt(blocksz[i])){
