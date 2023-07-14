@@ -6,7 +6,7 @@ A skyblock Mod
 * Allow party members to use some leader commands. (ex: allinvite)
 * Some fun feature
 * This mod is made for Tawianese
-* Use /rat open Gui
+* Use /chimera open Gui
 
 ### Dungeon 
 1. Mimic Killed message customization .
