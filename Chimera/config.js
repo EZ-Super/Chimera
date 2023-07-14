@@ -128,7 +128,7 @@ class gui {
     @SwitchProperty({
         name : "Flare timer ",
         description : "Flare timer",
-        categories : "Other",
+        category : "Other",
         subcategory : "Flare time"
     })flare_timer = false
     @ButtonProperty({

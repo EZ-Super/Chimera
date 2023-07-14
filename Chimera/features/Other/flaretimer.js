@@ -24,7 +24,6 @@ let flare = {
 const Firework = new Item("fireworks")
 
 
-let inFlareRange = false;
 
 register("renderOverlay",()=>{
     if(!gui.flare_timer) return;
@@ -53,13 +52,16 @@ register("renderOverlay",()=>{
 
         if (type === -1) return;
 
-        inFlareRange = true;
-        const flareTime = parseInt(180 - armorstand.getTicksExisted() / 20);
+        let flareTime = parseInt(180 - armorstand.getTicksExisted() / 20);
 
         if (type > flare.type) {
             flare.type = type;
             flare.time = flareTime;
-        } else if (type === flare.type && flareTime > flare.time) {
+        } else if (type === flare.type) {
+            flare.time = flareTime;
+        }
+        else if(type < flare.type){
+            flare.type = type;
             flare.time = flareTime;
         }
 
@@ -71,4 +73,15 @@ register("renderOverlay",()=>{
         DisplayRender(userData.FT.x,userData.FT.y,userData.FT.scale,`${flaretype}  : ${flare.time}`)
 
     })
+    if(flare.time<=0){
+        flare.type =0;
+    }
+})
+
+
+register("worldUnload",()=>{
+    flare = {
+        type: -1,
+        time: 0
+    };
 })

@@ -1,18 +1,25 @@
 import gui from "./config";
 import { userData } from "./utils/userdata";
 
-import "./utils/MiminKilled";
+
+import "./world/world";
+
+import "./utils/Renderer"
+//frag bot
+import "./features/frag_bot/frag_bot";
+//party 
 import "./features/party/always_all_invite";
 import "./features/party/auto_transfer";
-import "./world/world";
 import "./features/dungeon/dungeon_pet_check"
-import "./features/frag_bot/frag_bot";
+//dungeon 
+import "./features/dungeon/MiminKilled";
 import "./features/dungeon/hp_warn";
 import "./features/dungeon/hp_warn";
 import "./features/dungeon/ndt";
+//other 
 import "./features/other/powerorb";
-import "./utils/Renderer"
-import "./features/other/current_time"
+import "./features/other/current_time";
+import "./features/Other/flaretimer";
 //=============================================
 import "./features/test/test"
 //==================================================================
@@ -57,7 +64,7 @@ register("command",(...args)=>{
         ChatLib.chat("&bAuto transfer");
         ChatLib.chat("&b other use /Chimera ");
     }
-}).setCommandName("Chimera");
+}).setCommandName("chimera").setAliases("ch");
 
 
 

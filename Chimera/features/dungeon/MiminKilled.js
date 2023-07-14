@@ -1,5 +1,5 @@
-import gui from "../config"
-import {getworld} from "../world/world"
+import gui from "../../config"
+import {getworld} from "../../world/world"
 
 
 register('Entitydeath', (entity) => {
