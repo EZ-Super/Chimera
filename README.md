@@ -7,6 +7,10 @@ A skyblock Mod
 * This mod is made for Tawianese
 * Use /chimera open Gui
 
+## V0.0.2 new 
+* Mark mob if in ice spray range
+
+
 ### Dungeon 
 1. Mimic Killed message customization .
 2. No Down time mode .
