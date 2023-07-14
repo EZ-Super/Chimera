@@ -8,7 +8,7 @@ A skyblock Mod
 * Use /chimera open Gui
 
 ## V0.0.2 new 
-* Mark mob if in ice spray range
+* Mark mob if in ice spray range 
 
 
 ### Dungeon 
