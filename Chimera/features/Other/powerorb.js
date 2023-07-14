@@ -1,9 +1,6 @@
 import RenderLib from  "../../../RenderLib";
 import gui from "../../config"
-import {DisplayRender} from "../../utils/Renderer"
-import { userData } from "../../utils/userdata";
 
-let [r,g,b] = [0,0,0];
 
 register("renderWorld",()=>{
     if(gui.flareRangeMarker === 0) return;
@@ -65,8 +62,6 @@ register("renderWorld",()=>{
         });
 });
 
-let flare_time;
-
 register("renderWorld",()=>{
     if(gui.flareRangeMarker === 0) return;
     let armorstand = World.getAllEntitiesOfType(net.minecraft.entity.item.EntityArmorStand);
@@ -96,11 +91,6 @@ register("renderWorld",()=>{
             }else if(gui.flareRangeMarker ===1){ //圓環
                 RenderLib.drawCyl(entity.getX(),entity.getY()-40,entity.getZ(),39.9,40,80,30,1,0,90,90,r,g,b,0.5,false,false);
             }
-
-
-            
-
-
     });
 
 })
@@ -139,14 +129,3 @@ register("command",()=>{
 }).setName("getflare");
 
 
-register("renderOverlay",()=>{
-    DisplayRender(userData.FT.x,userData.FT.y,userData.FT.scale,"Flare time:"+(flare_time-current_time));
-})
-
-
-
-
-register("worldUnload",()=>{
-    flare_count = false;
-    flare_time = 0;
-})

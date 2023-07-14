@@ -124,6 +124,13 @@ class gui {
         options: ["none", "cylinder", "floor"],
     })flareRangeMarker = 0;
 
+
+    @SwitchProperty({
+        name : "Flare timer ",
+        description : "Flare timer",
+        categories : "Other",
+        subcategory : "Flare time"
+    })flare_timer = false
     @ButtonProperty({
         name : "move Flare time",
         description : "",
