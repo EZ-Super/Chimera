@@ -71,7 +71,7 @@ register("renderOverlay",()=>{
     let flaretype = ""
     if(flare.type===0) flaretype ="&a&lWarning";
     else if(flare.type === 1) flaretype = "&1&lAlert";
-    else if(flaretype === 2) flaretype = "&5&lSOS"
+    else if(flare.type === 2) flaretype = "&5&lSOS"
     else return;
     DisplayRender(userData.FT.x,userData.FT.y,userData.FT.scale,`${flaretype}  : ${flare.time}`)
 })
