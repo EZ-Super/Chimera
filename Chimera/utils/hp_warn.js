@@ -2,7 +2,7 @@ import gui from "../config"
 
 let control = false;
 
-register("actionBar",(h1,h2,def,mana1,mana2) =>{
+register("actionBar",(h1,h2) =>{
     if(!gui.health_warn) return;
     h1 = h1.replace(",","");
     h1 = parseInt(h1);
