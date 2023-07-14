@@ -157,6 +157,13 @@ class gui {
         this.CT.open();
     }
 
+
+    @SwitchProperty({
+        name : "Ice spray range",
+        description : "Mark mob if in ice spray range",
+        category : "Other",
+        subcategory : "Ice spray"
+    })icespray_range = false
 //======== unworking
 
 

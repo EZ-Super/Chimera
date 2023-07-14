@@ -1,0 +1,72 @@
+
+[other]
+
+	[other.health_warn]
+		health_lower_than_how_much_warn_ = 0
+		health_warn = true
+
+	[other.frag_bot]
+		frag_bot = false
+
+	[other.ice_spray]
+		ice_spray_range = true
+
+	[other.flare_time]
+		flare_time_display = true
+		flare_timer_ = true
+
+	[other."power/flare/gyro"]
+		"power/flare/gyro_display" = true
+
+	[other.current_time]
+		current_time = true
+
+	[other.flare_range_marker]
+		"flare/power_orb_range_marker" = 1
+		flare_range_marker = 1
+
+[combat]
+
+	[combat.arrow]
+		"pericese_display(unworking)" = false
+
+	[combat.terminator]
+		"terminator_arrow_display(unworking)" = false
+
+[dungeon]
+
+	[dungeon.dungeon_pet_check]
+		dungeon_pet_check = false
+
+	[dungeon.low_hp_warn]
+		when_the_hp_is_lower_than_how_much_warning = 5000
+		low_hp_warn = false
+
+	[dungeon.mimic]
+		mimic_killed = true
+		mimic_killed_message = ""
+
+	[dungeon.ndt]
+		ndt = false
+		"dt_time_(s)" = 1
+
+[party]
+
+	[party.black_list]
+		"black_list_party(unworking)" = false
+		black_list = " "
+
+	[party.always_party_all_invite]
+		allow_party_member_setting_allinvite = false
+
+	[party.allow_party_someone]
+		allow_party_member_party_someone = false
+
+	[party.auto_transfer_party]
+		"auto_transfer_party(testing)" = false
+
+[undefined]
+
+	[undefined.flare_time]
+		flare_timer_ = false
+

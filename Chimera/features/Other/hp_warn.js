@@ -1,4 +1,4 @@
-import gui from "../config"
+import gui from "../../config"
 
 let control = false;
 

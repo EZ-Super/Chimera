@@ -23,12 +23,3 @@ register("chat",()=>{
         Client.Companion.showTitle("&6[Rat]","&4&lU R USING JELLYFISH",0,100,20);
     }
 }).setCriteria("Dungeon starts in 1 second.");
-
-register("chat",(message)=>{
-    if(!gui.dungeon_pet_check) return;
-
-    if(getpet()!=="Jellyfish"){
-        ChatLib.chat("&6[Ra] &4&lU R NOT USING JELLYFISH");
-        Client.Companion.showTitle("&6[Rat]","&4&lU R NOT USING JELLYFISH",0,100,20);
-    }
-}).setCriteria("SkyBlock Dungeon Warp${message}");

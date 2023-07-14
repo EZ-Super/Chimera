@@ -7,7 +7,7 @@ let master_or_normal = 0;
 register("chat",(message,message1)=>{
     if(!gui.NDT) return;
 
-    setTimeout(() => {  
+    setTimeout(() => {             
         //ChatLib.chat(message1);
         if(master_or_normal==1)
             ChatLib.command("joindungeon catacombs "+current_floor );

@@ -19,6 +19,7 @@ A skyblock Mod
 3. Flare time show 
 4. Frag bot : auto join party and will leave party after 7 sec.
 5. Low Hp warn : If you hp lower than setting will warn.
+6. Mark mob if in ice spray range
 
 ### Party
 1. Allow all party member party someone : Using !p {ign} in party channel  or send message !p {ign}.
