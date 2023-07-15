@@ -9,17 +9,18 @@ register("worldLoad",()=>{
         if(!getworld().includes("Catac")) return;
 
         if(getpet()!=="Jellyfish"){
-            ChatLib.chat("&6[Rat] &4&lU R NOT USING JELLYFISH");
-            Client.Companion.showTitle("&6[Rat]","&4&lU R NOT USING JELLYFISH",0,100,20);
+            ChatLib.chat("&6[Chimera] &4&lU R NOT USING JELLYFISH");
+            Client.Companion.showTitle("&6[Chimera]","&4&lU R NOT USING JELLYFISH",0,100,20);
         }
     }, 5000);
 });
 
 register("chat",()=>{
     if(!gui.dungeon_pet_check) return;
-
-    if(getpet()==="Jellyfish"){
-        ChatLib.chat("&6[Rat] &4&lU R USING JELLYFISH");
-        Client.Companion.showTitle("&6[Rat]","&4&lU R USING JELLYFISH",0,100,20);
-    }
+    setTimeout(() => {
+        if(getpet()==="Jellyfish"){
+            ChatLib.chat("&6[Chimera] &4&lU R USING JELLYFISH");
+            Client.Companion.showTitle("&6[Chimera]","&4&lU R USING JELLYFISH",0,100,20);
+        }
+    }, 1000);
 }).setCriteria("Dungeon starts in 1 second.");

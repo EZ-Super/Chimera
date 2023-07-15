@@ -164,6 +164,14 @@ class gui {
         category : "Other",
         subcategory : "Ice spray"
     })icespray_range = false
+
+    @SelectorProperty({
+        name : "Chimera language",
+        description : "* when u change u have to reload ur chat trigger",
+        category : "Other",
+        subcategory : "Language",
+        options : ["English","Chinese"]
+    })language = 0;
 //======== unworking
 
 

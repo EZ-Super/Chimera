@@ -24,7 +24,7 @@ register("actionBar",(h1,h2) =>{
 
 register("step",()=>{
     if(!gui.health_warn) return;
-    let player = Player.asPlayerMP().getEntity();
+    let player = Player.asPlayerMP()?.getEntity();
     if(player.func_110143_aJ() / player.func_110138_aP()<=gui.health_warn_setting/100 &&control === false){
         control = true
         ChatLib.chat(`&6[Chimera] WARNING:&b&l HEALTH BELOW  ${gui.health_warn_setting} %❤`);
