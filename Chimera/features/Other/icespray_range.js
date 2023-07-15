@@ -74,7 +74,7 @@ register("renderWorld",()=>{
             if(mob.getClassName()===avoidEntity[i]) return;
 
         if(mob.distanceTo(px,py,pz)>7.5) return;
-       // ChatLib.chat(mob.getClassName())
+        //ChatLib.chat(mob.getClassName())
         for(let i=0;i<blocksx.length;i++){
     
             if(parseInt(mob.getX())==parseInt(blocksx[i]) &&parseInt(mob.getZ())==parseInt(blocksz[i])){

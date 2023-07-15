@@ -19,11 +19,11 @@ register("step",()=>{
             
             line[2] = parseInt(line[2]);
       
-            if(line[2]<gui.dungeon_low_hp_text && cooldow!=true){
+            if(line[2]<gui.dungeon_low_hp_setting && cooldow!=true){
                 
                 cooldow = true;
-                ChatLib.chat(`&6[Rat]&4&l Warning ${line[1]} low hp`);
-                Client.Companion.showTitle("&6[Rat] Warning",`&4&l${line[1]} low hp`,0,100,20);
+                ChatLib.chat(`&6[Chimear]&4&l Warning ${line[1]} &b&l HEALTH BELOW ${gui.dungeon_low_hp_setting}`);
+                Client.Companion.showTitle("&6[Chimera] Warning",`&b&l HEALTH BELOW ${gui.dungeon_low_hp_setting}`,0,100,20);
                 setTimeout(()=>{
                     cooldow = false;
                 },5000)

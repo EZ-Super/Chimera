@@ -19,34 +19,34 @@ class gui {
 
     @SwitchProperty({
         name: "mimic killed",
-        description: "擊殺mimic通知",
+        description: "Mimic Killed message customization",
         category: "Dungeon",
         subcategory: "Mimic",
     })mimickilled = true;
 
     @TextProperty({
         name:"Mimic killed message",
-        description: "mimic 擊殺訊息",
+        description: "Mimic Killed message ",
         category : "Dungeon",
         subcategory :"Mimic"
     })minickilledsendmessage = "";
 
     @SwitchProperty({
         name : "Allow party member setting allinvite",
-        description : "允許party成員開啟讓所有人party 使用!allinv",
+        description : "allow party setting allinvite party , using !allinv",
         category : "Party",
         subcategory :"Always party all invite"
     })allwayspartyallinvite = false;
     @SwitchProperty({
         name:"Allow party member party someone",
-        description : "Party someone 使用 !p {ign}",
+        description : "Party someone ,using !p {ign}",
         category : "Party",
         subcategory:"Allow party someone"
     })allow_party_member_party_someone = false;
 
     @SwitchProperty({
         name : "Auto transfer party(Testing)",
-        description : "自動把party 傳給別人",
+        description : "auto transfer party",
         category : "Party",
         subcategory : "auto transfer party"
     })autotransfer = false;
@@ -60,7 +60,7 @@ class gui {
 
     @SwitchProperty({
         name : "Frag bot",
-        description : "開啟讓別人party",
+        description : "open auto accept party then after 7 sec leave",
         category : "Other",
         subcategory : "Frag bot"
     })frag_bot = false;
@@ -74,13 +74,13 @@ class gui {
 
     @SliderProperty({
         name : "When the HP is lower than how much warning",
-        description : "當hp低於多少時警告",
+        description : "When the HP is lower than how much warning",
         category : "Dungeon",
         subcategory : "low hp warn",
         min : 0,
         max : 50000
 
-    })dungeon_low_hp_text = 5000;
+    })dungeon_low_hp_setting = 5000;
 
     @SwitchProperty({
         name : "Health warn",
@@ -90,14 +90,14 @@ class gui {
     })health_warn = false;
 
     @SliderProperty({
-        name : "Health lower than how much warn ",
+        name : "Health lower than how much percent warn ",
         description : "",
         category :"Other",
         subcategory : "Health warn",
         min : 0,
-        max : 30000
+        max : 100
 
-    })health_warn_text = 200;
+    })health_warn_setting = 50;
 
 
     @SwitchProperty({
