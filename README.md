@@ -7,9 +7,12 @@ A skyblock Mod
 * This mod is made for Tawianese
 * Use /chimera open Gui
 
-## V0.0.2 new 
+## v0.0.2 new 
 * Mark mob if in ice spray range 
 ![alt](https://media.discordapp.net/attachments/900668261748867082/1129432987784716368/ice.png?width=1581&height=889)
+
+## v0.0.3 new
+* Mark dungeon star mob
 ![alt](https://media.discordapp.net/attachments/900668261748867082/1129743002961711214/image.png?width=1581&height=889)
 
 ### Dungeon 
