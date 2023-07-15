@@ -18,7 +18,8 @@ const FlareColors = [
 
 let flare = {
     type: -1,
-    time: 0
+    time: 0,
+    UUID :""
 };
 
 const Firework = new Item("fireworks")
@@ -50,17 +51,23 @@ register("renderOverlay",()=>{
             }
         }
 
+      
+
         if (type === -1) return;
+
+        //ChatLib.chat(as.getUUID());
 
         let flareTime = parseInt(180 - armorstand.getTicksExisted() / 20);
 
         if (type > flare.type) {
+            flare.UUID = as.getUUID();
             flare.type = type;
             flare.time = flareTime;
         } else if (type === flare.type && flareTime > flare.time) {
+            flare.UUID = as.getUUID();
             flare.time = flareTime;
         }
-        else if(type === flare.type && flare.time - flareTime <2){
+        else if(as.getUUID() === flare.UUID){
             flare.time = flareTime;
         }
 
@@ -71,11 +78,12 @@ register("renderOverlay",()=>{
         else return;
         DisplayRender(userData.FT.x,userData.FT.y,userData.FT.scale,`${flaretype}  : ${flare.time}`)
 
-        if(flare.time<=0){
-            flare.type =-1;
-        }
-
     })
+    
+    if(flare.time<=0){
+        flare.UUID = "";
+        flare.type =-1;
+    }
 
 })
 
