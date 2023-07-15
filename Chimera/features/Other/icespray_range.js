@@ -2,7 +2,7 @@ import gui from "../../config"
 import RenderLib from "../../../RenderLib";
 
 
-let avoidEntity = ["EntityArmorStand","EntityPlayerSP","EntityOtherPlayerMP","EntityItemFrame","EntityVillager","EntityXPOrb","EntityPainting","EntityArrow"
+let avoidEntity = ["EntityArmorStand","EntityPlayerSP","EntityItemFrame","EntityVillager","EntityXPOrb","EntityPainting","EntityArrow"
                     ,"EntityFishHook","EntityFireworkRocket","EntityFallingBlock","EntityItem","EntityBoat","EntityMinecartEmpty","EntityMinecartTNT","EntityMinecartHopper"
                     ,"EntityExpBottle"]
 
@@ -11,7 +11,7 @@ register("renderWorld",()=>{
     if(!gui.icespray_range) return;
     let held_item = Player.getHeldItem()?.getName();
     if(held_item === undefined) return;
-    if(!held_item.includes("Ice Spray Wand")) return;
+    if(!held_item.includes("Ice Spray Wand")) return; 
 
     //RenderLib.drawCyl(Player.getX(),Player.getY(),Player.getZ(),0,7.5,0.2,30,1,0,90,90,0.68,0.84,0.91,0.5,false,false)
     let px = Player.getX();

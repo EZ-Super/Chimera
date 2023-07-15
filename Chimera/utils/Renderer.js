@@ -10,6 +10,9 @@ register("renderOverlay",()=>{
     if(gui.CT.isOpen()){
         DisplayRender(userData.CT.x,userData.CT.y,userData.CT.scale,"");
     }
+    if(gui.FF.isOpen()){
+        DisplayRender(userData.FF.x,userData.FF.y,userData.FF.scale,"Fire Freeze");
+    }
 })
 
 
@@ -43,6 +46,10 @@ register("dragged",(dx,dy,x,y)=>{
         userData.CT.y+=dy;
         userData.save();
     }
+    else if(gui.FF.isOpen()){
+        userData.FF.x +=dx;
+        userData.FF.y += dy;
+    }
 })
 
 register("scrolled",(x,y,dir)=>{
@@ -51,6 +58,9 @@ register("scrolled",(x,y,dir)=>{
     }
     else if(gui.CT.isOpen()){
         setscale(userData.CT,dir);
+    }
+    else if(gui.FF.isOpen()){
+        setscale(userData.FF,dir);
     }
 })
 

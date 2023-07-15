@@ -15,6 +15,8 @@ import "./features/dungeon/dungeon_pet_check"
 import "./features/dungeon/MiminKilled";
 import "./features/dungeon/hp_warn";
 import "./features/dungeon/ndt";
+import "./features/dungeon/MarkStarMob"
+import "./features/dungeon/FireFreeze"
 //other 
 import "./features/other/powerorb";
 import "./features/other/current_time";

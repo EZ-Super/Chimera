@@ -15,7 +15,7 @@ class gui {
 
     FT = new Gui()
     CT = new Gui()
-
+    FF = new Gui()
 
     @SwitchProperty({
         name: "mimic killed",
@@ -163,15 +163,30 @@ class gui {
         description : "Mark mob if in ice spray range",
         category : "Other",
         subcategory : "Ice spray"
-    })icespray_range = false
+    })icespray_range = false;
 
-    @SelectorProperty({
-        name : "Chimera language",
-        description : "* when u change u have to reload ur chat trigger",
-        category : "Other",
-        subcategory : "Language",
-        options : ["English","Chinese"]
-    })language = 0;
+    @SwitchProperty({
+        name : "Fire Freeze",
+        description : "Show fire freeze time at m3",
+        category : "Dungeon",
+        subcategory : "Fire Freeze"
+    })FireFreeze = false;
+    @ButtonProperty({
+        name : "Move Fire Freeze",
+        description : "",
+        category : "Dungeon",
+        subcategory : "Fire Freeze"
+    })moveFF(){
+        this.FF.open();
+    }
+
+    @SwitchProperty({
+        name : "Mark Star Mob",
+        description : "",
+        category : "Dungeon",
+        subcategory : "Star Mob Mark"
+    })StarMob = false;
+
 //======== unworking
 
 

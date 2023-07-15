@@ -60,7 +60,9 @@ register("renderOverlay",()=>{
         } else if (type === flare.type && flareTime > flare.time) {
             flare.time = flareTime;
         }
-
+        else if(type === flare.type && flare.time - flareTime <2){
+            flare.time = flareTime;
+        }
 
         let flaretype = ""
         if(flare.type===0) flaretype ="&a&lWarning";
@@ -69,10 +71,12 @@ register("renderOverlay",()=>{
         else return;
         DisplayRender(userData.FT.x,userData.FT.y,userData.FT.scale,`${flaretype}  : ${flare.time}`)
 
+        if(flare.time<=0){
+            flare.type =-1;
+        }
+
     })
-    if(flare.time<=0){
-        flare.type =-1;
-    }
+
 })
 
 
