@@ -5,6 +5,7 @@ const GuiTextField = Java.type("net.minecraft.client.gui.GuiTextField");
 
 
 register("postGuiRender",()=>{
+  if(!gui.AttributeText) return;
     if(searchTerm ==="") return;
     if(Player?.getContainer()?.getClassName()!=="ContainerChest")  return;
 
