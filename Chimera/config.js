@@ -187,6 +187,20 @@ class gui {
         subcategory : "Star Mob Mark"
     })StarMob = false;
 
+    @SwitchProperty({
+        name : "PRECISE pos display",
+        description : "show mob PRECISE pos",
+        category : "Other",
+        subcategory : "PRECISE"
+    })PreciseDisplay = false;
+
+    @SwitchProperty({
+        name : "Item search(Enchanted/Attribute)",
+        description : "Attribute and Enchanted search use , to Split",
+        category : "Other",
+        subcategory : "Item search"
+    })AttributeText = false;
+
 //======== unworking
 
 

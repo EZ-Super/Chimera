@@ -18,10 +18,12 @@ import "./features/dungeon/ndt";
 import "./features/dungeon/MarkStarMob"
 import "./features/dungeon/FireFreeze"
 //other 
-import "./features/other/powerorb";
-import "./features/other/current_time";
+import "./features/Other/powerorb";
+import "./features/Other/current_time";
 import "./features/Other/flaretimer";
 import "./features/Other/icespray_range";
+import "./features/Other/PRECISE";
+import "./features/Other/AttributesSearch"
 //utils
 
 import "./features/Other/hp_warn"

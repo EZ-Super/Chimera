@@ -15,6 +15,13 @@ A skyblock Mod
 * Mark dungeon star mob
 ![alt](https://media.discordapp.net/attachments/900668261748867082/1129743002961711214/image.png?width=1581&height=889)
 
+## v0.0.4 new 
+*  enchant and Attribute search, multiple conditions can be used "," split
+![alt](https://media.discordapp.net/attachments/1051689830431600692/1130156915335364741/image.png?width=1581&height=889)
+![alt](https://media.discordapp.net/attachments/876354100315439114/1130159699388534906/image.png?width=1581&height=889)
+* PRECISE coordinate display
+
+
 ### Dungeon 
 1. Mimic Killed message customization .
 2. No Down time mode .
@@ -29,6 +36,8 @@ A skyblock Mod
 4. Frag bot : auto join party and will leave party after 7 sec.
 5. Low Hp warn : If you hp lower than setting will warn.
 6. Mark mob if in ice spray range
+7. Enchanted and Attribute search, multiple conditions can be used, split
+8. PRECISE pos display
 
 ### Party
 1. Allow all party member party someone : Using !p {ign} in party channel  or send message !p {ign}.

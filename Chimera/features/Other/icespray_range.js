@@ -20,7 +20,7 @@ register("renderWorld",()=>{
     
 
 
-    const radius = 7.5; // 半徑長度
+    const radius = 8; // 半徑長度
     const angle = 60; // 角度
     let yaw = Player.getYaw()+90 ; // 獲取玩家的偏航角度（yaw），並將其轉換為 0 到 359 的範圍
    // ChatLib.chat(yaw);
@@ -64,8 +64,12 @@ register("renderWorld",()=>{
 
         }
     }
+/*
+    for(let i=0;i<blocksx.length;i++){
+        RenderLib.drawBaritoneEspBox(blocksx[i]-0.5,Player.getY(),blocksz[i]-0.5,1+0.3 ,1+0.3,1, 0, 0,1, true);
+    }
 
-
+*/
     let entities = World.getAllEntities();
 
     entities.find((mob)=>{
@@ -79,12 +83,15 @@ register("renderWorld",()=>{
     
             if(parseInt(mob.getX())==parseInt(blocksx[i]) &&parseInt(mob.getZ())==parseInt(blocksz[i])){
  
-                RenderLib.drawBaritoneEspBox(mob.getX()-0.5,mob.getY(),mob.getZ()-0.5,mob.getWidth()+0.3 ,mob.getHeight()+0.3,1, 0, 0,1, true);
+                RenderLib.drawBaritoneEspBox(mob.getX()-0.5,mob.getY(),mob.getZ()-0.5,mob.getWidth()+0.3 ,mob.getHeight()+0.3,0.68, 0.84, 0.91,1, true);
             }
         }
 
     })
 
 
+    let x = Player.getX();
+    let y = Player.getY();
+    let z = Player.getZ();
 
 });
