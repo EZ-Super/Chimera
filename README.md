@@ -19,6 +19,7 @@ A skyblock Mod
 *  enchant and Attribute search, multiple conditions can be used "," split
 ![alt](https://media.discordapp.net/attachments/1051689830431600692/1130156915335364741/image.png?width=1581&height=889)
 ![alt](https://media.discordapp.net/attachments/876354100315439114/1130159699388534906/image.png?width=1581&height=889)
+* Attributes Protect
 * PRECISE coordinate display
 
 
@@ -38,6 +39,7 @@ A skyblock Mod
 6. Mark mob if in ice spray range
 7. Enchanted and Attribute search, multiple conditions can be used, split
 8. PRECISE pos display
+9. Attributes Protect
 
 ### Party
 1. Allow all party member party someone : Using !p {ign} in party channel  or send message !p {ign}.
