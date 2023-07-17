@@ -6,21 +6,24 @@ import Chest from "../../Class/Chest";
 const GuiTextField = Java.type("net.minecraft.client.gui.GuiTextField");
 
 
-
-register("postGuiRender",()=>{
+let highlight= [];
+register("step",()=>{
   if(!gui.AttributeText) return;
   if(Player?.getContainer()?.getClassName() !=="ContainerChest") return;
-  let chest = new Chest(Player?.getContainer());
-  let highlight= [];
+  let chest = new Chest(Player.getContainer());
+  highlight =[]
   let SearchLore = searchTerm.split(",");
   highlight = chest.SearchItem(SearchLore);
-  for(let index =0;index<highlight.length;index++){
-    HighlightSlot(highlight[index]);
-  }
+}).setDelay(0.5)
 
-
+register("guiRender",()=>{
+  if(!gui.AttributeText) return;
+  if(Player?.getContainer()?.getClassName() !=="ContainerChest") return;
+  highlight.forEach((slot)=>{
+    HighlightSlot(slot);
+  })
+  
 })
-
 
 register("command",()=>{
     let SearchText = searchTerm.split(",");

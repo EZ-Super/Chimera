@@ -27,16 +27,21 @@ export function remove_pet(pet_name){
 }
 
 export function HighlightSlot(index){
-    if(Player.getPlayer() === null || Player.getContainer() === null) return;
+    if(Player.getContainer() === null) return;
     const container = Player.getContainer();
     x = index % 9;
     y = Math.floor(index / 9);
 
     const renderX = Renderer.screen.getWidth() / 2 + ((x - 4) * 18);
     let renderY;
+
         renderY = (Renderer.screen.getHeight() + 10) / 2 + ((y - container.getSize() / 18) * 18);
 
+
+
         Renderer.translate(0, 0, 100);
+
+        
     if(container.getSize()===90) 
         if(index<54) 
             Renderer.drawRect(Renderer.color(255, 0,0, 100), renderX - 9, renderY - 9, 17, 17);

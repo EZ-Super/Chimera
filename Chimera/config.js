@@ -189,7 +189,7 @@ class gui {
     })StarMob = false;
 
     @SwitchProperty({
-        name : "PRECISE pos display",
+        name : "PRECISE coordinate display",
         description : "show mob PRECISE pos",
         category : "Other",
         subcategory : "PRECISE"
