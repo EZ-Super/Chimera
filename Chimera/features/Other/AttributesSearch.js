@@ -16,7 +16,7 @@ register("step",()=>{
   highlight = chest.SearchItem(SearchLore);
 }).setDelay(0.5)
 
-register("guiRender",()=>{
+register("postGuiRender",()=>{
   if(!gui.AttributeText) return;
   if(Player?.getContainer()?.getClassName() !=="ContainerChest") return;
   highlight.forEach((slot)=>{
