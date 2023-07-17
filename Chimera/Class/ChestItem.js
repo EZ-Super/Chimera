@@ -95,4 +95,5 @@ function getLevl(level){
     else if(level === "VIII") return 8;
     else if(level === "IX") return 9;
     else if(level === "X") return 10;
+    else if(level >0&&level <=10) return level;
 }
