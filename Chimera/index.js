@@ -24,6 +24,7 @@ import "./features/Other/flaretimer";
 import "./features/Other/icespray_range";
 import "./features/Other/PRECISE";
 import "./features/Other/AttributesSearch"
+import "./features/Other/AttributesProtect";
 //utils
 
 import "./features/Other/hp_warn"

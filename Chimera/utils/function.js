@@ -36,9 +36,21 @@ export function HighlightSlot(index){
     let renderY;
         renderY = (Renderer.screen.getHeight() + 10) / 2 + ((y - container.getSize() / 18) * 18);
 
+        Renderer.translate(0, 0, 100);
+    if(container.getSize()===90) 
+        if(index<54) 
+            Renderer.drawRect(Renderer.color(255, 0,0, 100), renderX - 9, renderY - 9, 17, 17);
+        else if(index >=81)
+            Renderer.drawRect(Renderer.color(255, 0,0, 100), renderX - 9, renderY +9, 17, 17);
+        else
+            Renderer.drawRect(Renderer.color(255, 0,0, 100), renderX - 9, renderY +4, 17, 17);
+    if(container.getSize()===72)  
+        if(index<36) 
+            Renderer.drawRect(Renderer.color(255, 0,0, 100), renderX - 9, renderY - 9, 17, 17);   
+        else if(index >=63)
+            Renderer.drawRect(Renderer.color(255, 0,0, 100), renderX - 9, renderY +9, 17, 17);
+        else
+            Renderer.drawRect(Renderer.color(255, 0,0, 100), renderX - 9, renderY +4, 17, 17);
+    
 
-    if(container.getSize()===90) if(index>=54) return;
-    if(container.getSize()===72)  if(index>=36) return;   
-    Renderer.translate(0, 0, 100);
-    Renderer.drawRect(Renderer.color(255, 0,0, 100), renderX - 9, renderY - 9, 17, 17);
 }

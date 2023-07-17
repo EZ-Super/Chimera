@@ -26,7 +26,14 @@ export default class Chest{
         ChatLib.chat(this.ChestName);
         for(let index = 0;index<this.items.length;index++){
             ChatLib.chat(`${index} : `);
-            this.items[index].ShowLore();
+            //this.items[index].ShowLore();
+            //this.items[index].ShowNBT();
+            this.items[index].showAttributes();
         }
+    }
+
+
+    getIndexItem(index){
+        return this.items[index];
     }
 }

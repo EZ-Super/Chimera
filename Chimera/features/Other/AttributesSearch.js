@@ -12,7 +12,6 @@ register("postGuiRender",()=>{
   if(Player?.getContainer()?.getClassName() !=="ContainerChest") return;
   let chest = new Chest(Player?.getContainer());
   let highlight= [];
-
   let SearchLore = searchTerm.split(",");
   highlight = chest.SearchItem(SearchLore);
   for(let index =0;index<highlight.length;index++){

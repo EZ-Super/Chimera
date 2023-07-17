@@ -13,9 +13,10 @@ class gui {
 
     mimic = new Gui()
 
-    FT = new Gui()
-    CT = new Gui()
-    FF = new Gui()
+    FT = new Gui()  // flare time
+    CT = new Gui()  // current time
+    FF = new Gui() //Fire freeze
+    AP =new Gui() //Attributes Protect
 
     @SwitchProperty({
         name: "mimic killed",
@@ -200,6 +201,22 @@ class gui {
         category : "Other",
         subcategory : "Item search"
     })AttributeText = false;
+
+    @SwitchProperty({
+        name : "Attributes Protect",
+        description : "Avoid Attributes low-level and high-level composition",
+        category : "Other",
+        subcategory : "Avoid Attributes low-level and high-level composition"
+    })AttributesProtect = false;
+
+    @ButtonProperty({
+        name : "Attributes Protect move",
+        description : "AttributesProtect move",
+        category : "Other",
+        subcategory :"Avoid Attributes low-level and high-level composition"
+    })moveAP(){
+        this.AP.open()
+    }
 
 //======== unworking
 

@@ -17,6 +17,11 @@ export let userData = new PogObject("Chimera", {
         x : 150,
         y:150,
         scale :1
+    },    
+    AP:{
+        "x": 150,
+        "y" : 150,
+        "scale" :1
     },
     language : "English"
 }, "userdata.json");
