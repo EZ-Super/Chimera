@@ -11,7 +11,7 @@ export default class ChestItem{
 
     constructor(item){
         if (!(item instanceof Item)&&item !== null) throw "Error ChestItem Constuctor value not item";
-        this.NBT = item?.getRawNBT();
+        this.NBT = item?.getRawNBT()?.toLowerCase();
         this.LoreArray = item?.getLore();
         this.SetAttributesList();
 
@@ -44,7 +44,7 @@ export default class ChestItem{
         }
     }
 
-    SearchLore(Search){
+    SearchLore(Search){/*
         if(Search === undefined || this.LoreArray === undefined) return false;
         let Searched = []
         Search.forEach(search => {
@@ -58,6 +58,21 @@ export default class ChestItem{
                 
             })
         });
+        if(Searched.length === Search.length) return true;
+        else return false;*/
+
+
+        if(Search === undefined || this.NBT === undefined) return false;
+        let Searched = []
+        Search.forEach((search)=>{
+            search = search.toLowerCase();
+            if(search === "") return;
+            if(this.NBT.includes(search)){
+                if(!Searched.includes(search)){
+                    Searched.push(search);
+                }
+            }
+        })
         if(Searched.length === Search.length) return true;
         else return false;
     }
