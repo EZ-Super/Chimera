@@ -9,7 +9,7 @@ register("postGuiRender",()=>{
     let Gui = Player?.getContainer();
     if(Gui===null) return;
     if(Gui.getName()!=="Attribute Fusion") return;
-    gui = new Chest(Gui);
+    Gui = new Chest(Gui);
     let LeftIetm = Gui.getIndexItem(29).getAttributes();
     let RightItem = Gui.getIndexItem(33).getAttributes();
     let str = "&4&lAttributes Protect\nArmor 1\n"
