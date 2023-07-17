@@ -1,9 +1,27 @@
 import gui from "../../config"
 import {HighlightSlot}  from "../../utils/function"
 
+import Chest from "../../Class/Chest";
+
 const GuiTextField = Java.type("net.minecraft.client.gui.GuiTextField");
 
 
+
+register("postGuiRender",()=>{
+  if(!gui.AttributeText) return;
+  if(Player?.getContainer()?.getClassName() !=="ContainerChest") return;
+  let chest = new Chest(Player?.getContainer());
+  let highlight= [];
+
+  let SearchLore = searchTerm.split(",");
+  highlight = chest.SearchItem(SearchLore);
+  for(let index =0;index<highlight.length;index++){
+    HighlightSlot(highlight[index]);
+  }
+
+})
+
+/*
 register("postGuiRender",()=>{
   if(!gui.AttributeText) return;
     if(searchTerm ==="") return;
@@ -31,7 +49,7 @@ register("postGuiRender",()=>{
         if(highlight.length === SearchLore.length) HighlightSlot(i);
     }
 
-})
+})*/
 register("command",()=>{
     let SearchText = searchTerm.split(",");
 

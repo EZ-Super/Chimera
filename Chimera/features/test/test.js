@@ -9,5 +9,3 @@ register("command",()=>{
   .catch(e => null)
 }).setName("test")
 */
-
-
