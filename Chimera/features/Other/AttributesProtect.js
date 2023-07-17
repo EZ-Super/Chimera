@@ -5,12 +5,13 @@ import {DisplayRender} from "../../utils/Renderer"
 import { userData } from "../../utils/userdata";
 
 register("postGuiRender",()=>{
-    let gui = Player?.getContainer();
-    if(gui===null) return;
-    if(gui.getName()!=="Attribute Fusion") return;
-    gui = new Chest(gui);
-    let LeftIetm = gui.getIndexItem(29).getAttributes();
-    let RightItem = gui.getIndexItem(33).getAttributes();
+    if(!gui.AttributesProtect) return;
+    let Gui = Player?.getContainer();
+    if(Gui===null) return;
+    if(Gui.getName()!=="Attribute Fusion") return;
+    gui = new Chest(Gui);
+    let LeftIetm = Gui.getIndexItem(29).getAttributes();
+    let RightItem = Gui.getIndexItem(33).getAttributes();
     let str = "&4&lAttributes Protect\nArmor 1\n"
     LeftIetm.forEach((lvl,att) => {
         str+=(att+" "+lvl+"\n");
