@@ -18,37 +18,10 @@ register("postGuiRender",()=>{
     HighlightSlot(highlight[index]);
   }
 
+
 })
 
-/*
-register("postGuiRender",()=>{
-  if(!gui.AttributeText) return;
-    if(searchTerm ==="") return;
-    if(Player?.getContainer()?.getClassName()!=="ContainerChest")  return;
 
-    let items =  Player.getContainer().getItems();
-
-    for(let i=0;i<items.length;i++){
-        if(items[i] === null) continue;
-        let ItemLores = items[i]?.getLore();
-        let highlight = [];
-        let SearchLore = searchTerm.split(",");
-        for(let lore = 0 ;lore<ItemLores.length;lore++){
-            
-
-            for(let search =0;search<SearchLore.length;search++){
-                ItemLores[lore] = ItemLores[lore].toLowerCase();
-                SearchLore[search] = SearchLore[search].toLowerCase();
-                if(ItemLores[lore].includes(SearchLore[search])&&SearchLore[search]!=="") 
-                    if(!highlight.includes(SearchLore[search]))
-                        highlight.push(SearchLore[search]);
-            }
-
-        }
-        if(highlight.length === SearchLore.length) HighlightSlot(i);
-    }
-
-})*/
 register("command",()=>{
     let SearchText = searchTerm.split(",");
 
