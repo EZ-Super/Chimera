@@ -24,7 +24,7 @@
         },
         {
             "version" : "0.0.4",
-            "essential":true,
+            "essential":false,
             "changelog" : [
                 "Enchant and Attribute search, multiple conditions can be used ',' split",
                 "Attributes Protect",
