@@ -23,11 +23,12 @@ import "./features/Other/current_time";
 import "./features/Other/flaretimer";
 import "./features/Other/icespray_range";
 import "./features/Other/PRECISE";
+import "./features/Other/hp_warn"
 import "./features/Other/AttributesSearch"
 import "./features/Other/AttributesProtect";
 //utils
+import "./utils/UpdateCheck"
 
-import "./features/Other/hp_warn"
 //=============================================
 import "./features/test/test"
 //==================================================================

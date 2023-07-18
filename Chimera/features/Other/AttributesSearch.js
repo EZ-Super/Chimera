@@ -36,13 +36,7 @@ register("command",()=>{
 
 }).setName("getAttributeText");
 
-register("command",()=>{
-    let item =  Player?.getHeldItem()?.getLore();
 
-    for(let i=0;i<item.length;i++){
-        ChatLib.chat(item[i]);
-    }
-}).setName("test")
 let searchBar = new GuiTextField(0, Client.getMinecraft().field_71466_p,  25, 25, 100, 10);
 let searchTerm = "";
 
