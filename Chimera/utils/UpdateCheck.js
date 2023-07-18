@@ -1,4 +1,5 @@
 import request from "../../requestV2"
+import gui from "../config"
 
 let control = true;
 
@@ -8,35 +9,54 @@ register("worldLoad",()=>{
         if(!control) return;
         setTimeout(() => {
             control = false;
-            ChatLib.chat("&6&l[Chimera]&b&l Checking Version......");
+
     
             const latestVersion = data.latestVersion;
             const versionlog = data.versionlog;
             const moudleMetdata = JSON.parse(FileLib.read("Chimera","metadata.json"));
     
-            if(moudleMetdata.version == latestVersion){
-                ChatLib.chat("&6&l[Chimera]&b&l Your version is lastest");
-                return;
-            }
-            ChatLib.chat(`&6&l[Chimera]&b&l your mod version ${moudleMetdata.version} and lastest version is ${latestVersion}`);
-            Client.Companion.showTitle("&6[Chimera] &4Update Checker",`&bYour mod version ${moudleMetdata.version} and lastest version is ${latestVersion}`,0,100,20);
-            ChatLib.chat("&7&lVersion change log:")
+
+
     
             let search = false;
-            let ChangeLogText = ""
+            let ChangeLogText = "";
+            let Essential = false;
             for(let i = 0;i<versionlog.length;i++){
                 if(versionlog[i].version === moudleMetdata.version){
                     search = true;
                     continue;
                 }
                 if(!search) continue;
-                let str = "";
+                if(versionlog[i].essential==true){
+                    Essential = true;
+                    ChangeLogText+=`      &b&l-->${versionlog[i].version} &2&l New &4&l(Essential)\n`;
+                } else
+                    ChangeLogText+=`      &b&l-->${versionlog[i].version} &2&l New \n`;
                 versionlog[i].changelog.forEach(element => {
-                    str+=("         &e&l* "+element+"\n")
+                    
+                    ChangeLogText+=("         &e&l* "+element+"\n")
                 });
-                ChatLib.chat(`      &b&l-->${versionlog[i].version} &2&l New \n${str}\n`);
-                ChangeLogText+=str;
+                
             }
+
+
+            if(Essential===false)
+                if(!gui.UpdateCheck)
+                    return;
+
+            ChatLib.chat("&6&l[Chimera]&b&l Checking Version......");
+            if(moudleMetdata.version == latestVersion){
+                ChatLib.chat("&6&l[Chimera]&b&l Your version is lastest");
+                return;
+            }
+            
+            ChatLib.chat(`&6&l[Chimera]&b&l your mod version ${moudleMetdata.version} and lastest version is ${latestVersion}`);
+            Client.Companion.showTitle("&6[Chimera] &4Update Checker",`&bYour mod version ${moudleMetdata.version} and lastest version is ${latestVersion}`,0,100,20);
+            ChatLib.chat("&7&lVersion change log:")
+
+
+            ChatLib.chat(ChangeLogText);
+            if(!search) ChatLib.chat("&4&lSome Error Happened please report to discord: o_in");
             let githubLink = "https://github.com/EZ-Super/Chimera/releases";
             new Message(
                 `&9&m${ChatLib.getChatBreak(" ")}\n`,

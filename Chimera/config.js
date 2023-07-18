@@ -218,6 +218,12 @@ class gui {
         this.AP.open()
     }
 
+    @SwitchProperty({
+        name : "Update Checker",
+        description : "Udate Check &4&lIf Update is Essential it will work",
+        category : "Other",
+        subcategory : "Update Check"
+    })UpdateCheck = true;
 //======== unworking
 
 
