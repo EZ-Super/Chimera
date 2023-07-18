@@ -2,6 +2,10 @@
     "moduleName": "Chimera",
     "latestVersion": "0.0.4",
     "versionlog": [
+        {
+            "version" :"0.0.0",
+            "changelog" : ["Welcome use Chimera mod"]
+        },
 	    {
             "version":"0.0.1",
             "changelog" : ["Welcome use Chimera mod"]
