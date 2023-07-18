@@ -1,0 +1,26 @@
+{
+    "moduleName": "Chimera",
+    "latestVersion": "0.0.4",
+    "versionlog": [
+	    {
+            "version":"0.0.1",
+            "changelog" : ["Welcome use Chimera mod"]
+	    },
+        {
+            "version" : "0.0.2",
+            "changelog" :["Mark mob if in ice spray range"]
+        },
+        {
+            "version" : "0.0.3",
+            "changelog" : ["Mark dungeon star mob"]
+        },
+        {
+            "version" : "0.0.4",
+            "changelog" : [
+                "enchant and Attribute search, multiple conditions can be used ',' split",
+                "Attributes Protect",
+                "PRECISE coordinate display"
+            ]
+        }
+    ]
+}
