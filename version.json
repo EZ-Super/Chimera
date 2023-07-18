@@ -14,7 +14,7 @@
 	    },
         {
             "version" : "0.0.2",
-            "essential":true,
+            "essential":false,
             "changelog" :["Mark mob if in ice spray range"]
         },
         {
@@ -24,7 +24,7 @@
         },
         {
             "version" : "0.0.4",
-            "essential":false,
+            "essential":true,
             "changelog" : [
                 "Enchant and Attribute search, multiple conditions can be used ',' split",
                 "Attributes Protect",
