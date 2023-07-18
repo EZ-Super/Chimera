@@ -4,22 +4,27 @@
     "versionlog": [
         {
             "version" :"0.0.0",
+            "essential":false,
             "changelog" : ["Welcome use Chimera mod"]
         },
 	    {
             "version":"0.0.1",
+            "essential":false,
             "changelog" : ["Welcome use Chimera mod"]
 	    },
         {
             "version" : "0.0.2",
+            "essential":false,
             "changelog" :["Mark mob if in ice spray range"]
         },
         {
             "version" : "0.0.3",
+            "essential":false,
             "changelog" : ["Mark dungeon star mob"]
         },
         {
             "version" : "0.0.4",
+            "essential":true,
             "changelog" : [
                 "Enchant and Attribute search, multiple conditions can be used ',' split",
                 "Attributes Protect",
