@@ -17,9 +17,10 @@
         {
             "version" : "0.0.4",
             "changelog" : [
-                "enchant and Attribute search, multiple conditions can be used ',' split",
+                "Enchant and Attribute search, multiple conditions can be used ',' split",
                 "Attributes Protect",
                 "PRECISE coordinate display"
+		
             ]
         }
     ]
