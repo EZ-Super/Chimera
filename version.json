@@ -1,6 +1,6 @@
 {
     "moduleName": "Chimera",
-    "latestVersion": "0.0.4",
+    "latestVersion": "0.0.5",
     "versionlog": [
         {
             "version" :"0.0.0",
@@ -29,6 +29,15 @@
                 "Enchant and Attribute search, multiple conditions can be used ',' split",
                 "Attributes Protect",
                 "PRECISE coordinate display"
+		
+            ]
+	},
+	{
+            "version" : "0.0.5",
+            "essential":true,
+            "changelog" : [
+                "&4&l For your account security, Chimera no longer provides \"Mark Dungeon Star Mob\" since version v0.0.5+(more see detail Information)",
+		"&b 《Chimera 2》 Comming Soon,This version is make for cheaters, But it maybe not free ,Because &4&l Don't forget that money can be earn, but you can earn more if u  without conscience. "
 		
             ]
         }
