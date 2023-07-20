@@ -3,22 +3,12 @@
     "Date" : "2023/7/20",
     "ID":"789999",
     "announcement": [
-        {
-            "Text" : "&4&l For your account security, Chimera no longer provides \"Mark Dungeon Star Mob\" since version v0.0.5+(more see detail Information)"
-        },
-        {
-            "Text" : "&b 《Chimera 2》 Comming Soon,This version is make for cheaters, But it maybe not free ,Because &4&l Don't forget that money can be earn, but you can earn more if u  without conscience. "
-        }
-
+            "&4&l For your account security, Chimera no longer provides \"Mark Dungeon Star Mob\" since version v0.0.5+(more see detail Information)",
+            "&b 《Chimera 2》 Comming Soon,This version is make for cheaters, But it maybe not free ,Because &4&l Don't forget that money can be earn, but you can earn more if u  without conscience. "
     ],
     "detail":[
-        {
-            "Text" : "&b Because \"Mark Dungeon Star Mob\" may let you get ban, So For your account security,&4&l So Since version v0.0.5+ Chimera no longer provides \"Mark Dungeon Star Mob\""
-        },
-        {
-            "Text" : "&b 《Chimera 2》 Comming Soon,This version is make for cheaters, But it maybe not free ,Because &4&l Don't forget that money can be earn, but you can earn more if u  without conscience. "
-        }
-
+        "&b Because \"Mark Dungeon Star Mob\" may let you get ban, So For your account security,&4&l So Since version v0.0.5+ Chimera no longer provides \"Mark Dungeon Star Mob\"",
+        "&b 《Chimera 2》 Comming Soon,This version is make for cheaters, But it maybe not free ,Because &4&l Don't forget that money can be earn, but you can earn more if u  without conscience. "
     ]
 
 }
