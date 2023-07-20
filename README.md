@@ -29,7 +29,6 @@ A skyblock Mod
 2. No Down time mode .
 3. Dungeon pet check : if enter dungeon U r not using Jellyfish pet or start dungeon u r using jellyfish pet will warn.
 4. Teammate low hp warn : When Teammate hp is lower than setting will warn.
-5. Mark dungeon star mob
 
 ### Other
 1. Current time show .
