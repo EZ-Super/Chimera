@@ -31,8 +31,8 @@
                 "PRECISE coordinate display"
 		
             ]
-	},
-	{
+	    },
+	    {
             "version" : "0.0.5 (Coming 7/22)",
             "essential":true,
             "changelog" : [
