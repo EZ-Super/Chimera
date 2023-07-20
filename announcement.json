@@ -1,24 +1,36 @@
 {
-    "ModuleName":"Chimera",
-    "Date" : "2023/7/20",
-    "ID":789999,
-    "announcement": [
+    "moduleName": "Chimera",
+    "latestVersion": "0.0.4",
+    "versionlog": [
         {
-            "Text" : "&4&l For your account security, Chimera no longer provides \"Mark Dungeon Star Mob\" since version v0.0.5+(more see detail Information)"
+            "version" :"0.0.0",
+            "essential":false,
+            "changelog" : ["Welcome use Chimera mod"]
+        },
+	    {
+            "version":"0.0.1",
+            "essential":false,
+            "changelog" : ["Welcome use Chimera mod"]
+	    },
+        {
+            "version" : "0.0.2",
+            "essential":false,
+            "changelog" :["Mark mob if in ice spray range"]
         },
         {
-            "Text" : "&b 《Chimera 2》 Comming Soon,This version is make for cheaters, But it maybe not free ,Because &4&l Don't forget that money can be earn, but you can earn more if u  without conscience. "
-        }
-
-    ],
-    "detail":[
-        {
-            "Text" : "&b Because \"Mark Dungeon Star Mob\" may let you get ban, So For your account security,&4&l So Since version v0.0.5+ Chimera no longer provides \"Mark Dungeon Star Mob\""
+            "version" : "0.0.3",
+            "essential":false,
+            "changelog" : ["Mark dungeon star mob"]
         },
         {
-            "Text" : "&b 《Chimera 2》 Comming Soon,This version is make for cheaters, But it maybe not free ,Because &4&l Don't forget that money can be earn, but you can earn more if u  without conscience. "
+            "version" : "0.0.4",
+            "essential":true,
+            "changelog" : [
+                "Enchant and Attribute search, multiple conditions can be used ',' split",
+                "Attributes Protect",
+                "PRECISE coordinate display"
+		
+            ]
         }
-
     ]
-
 }
