@@ -7,7 +7,7 @@ let control= false ;
 register("chat",(player)=>{
     if(!gui.frag_bot) return;
     player = getPlayerName(player).trim();
-    if(control==false){
+    if(control === false){
         control = true;
         ChatLib.command("p accept "+player);
 

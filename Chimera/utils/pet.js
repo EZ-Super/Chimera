@@ -1,4 +1,4 @@
-import {userData} from  "../utils/userdata"
+import {userData} from "./userdata"
 import {remove_pet} from "./function"
 import gui from "../config"
 

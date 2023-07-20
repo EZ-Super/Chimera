@@ -1,4 +1,4 @@
-import RenderLib from "../../../RenderLib";
+/*import RenderLib from "../../../RenderLib";
 import gui from  "../../config"
 
 
@@ -12,4 +12,4 @@ register("renderWorld",()=>{
             RenderLib.drawInnerEspBox(mob.getX(),mob.getY()-2,mob.getZ(),1 ,2,0, 0, 1,0.5, true);
         }
     })
-})
+})*/

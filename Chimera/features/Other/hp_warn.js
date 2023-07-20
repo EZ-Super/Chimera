@@ -1,4 +1,5 @@
 import gui from "../../config"
+import {RegisterEventListener} from "../../utils/EventLinster"
 
 let control = false;
 /*
@@ -20,7 +21,10 @@ register("actionBar",(h1,h2) =>{
 }).setCriteria("${h1}/${h2}❤     ${mseeage}")
 
 
-*/
+
+
+
+
 
 register("step",()=>{
     if(!gui.health_warn) return;
@@ -39,3 +43,30 @@ register("step",()=>{
         },5000)
     }
 }).setDelay(0.1);
+
+*/
+
+
+
+RegisterEventListener(()=>gui.health_warn,
+    register("step",()=>{
+        let player = Player.asPlayerMP()?.getEntity();
+        if(player===undefined) return;
+        if(player.func_110143_aJ() / player.func_110138_aP()<=gui.health_warn_setting/100 &&control === false){
+            control = true
+            ChatLib.chat(`&6[Chimera] WARNING:&b&l HEALTH BELOW  ${gui.health_warn_setting} %❤`);
+            World.playSound("mob.blaze.death",20,1);
+            Client.Companion.showTitle("&6[Chimera] WARNING: ","&bHEALTH BELOW "+gui.health_warn_setting+"%",0,100,20);
+
+
+
+            setTimeout(()=>{
+                control = false;
+            },5000)
+        }
+    }).setDelay(0.1)
+)
+
+register("command",()=>{
+    ChatLib.chat(gui.health_warn);
+}).setName("test")

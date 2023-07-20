@@ -28,6 +28,7 @@ import "./features/Other/AttributesSearch"
 import "./features/Other/AttributesProtect";
 //utils
 import "./utils/UpdateCheck"
+import "./utils/announcement"
 
 //=============================================
 import "./features/test/test"
@@ -63,7 +64,7 @@ register("command",(...args)=>{
     command1 = args[0] == undefined? undefined:args[0].toLowerCase();
     command2 = args[1] == undefined? undefined:args[2].toLowerCase();
 
-    if(command1 == undefined && command2 == undefined)
+    if(command1 === undefined && command2 === undefined)
         gui.openGUI();
     else if(command1 == "help"){
         ChatLib.chat("&6&l----------------------Welcome use Chimera Mod----------------------");

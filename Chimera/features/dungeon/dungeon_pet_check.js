@@ -2,7 +2,36 @@ import "../../utils/pet";
 import {getpet} from "../../utils/pet";
 import {getworld} from "../../world/world"
 import gui from "../../config" 
+import {RegisterEventListener} from "../../utils/EventLinster"
 
+
+RegisterEventListener(()=>gui.dungeon_pet_check,
+    register("worldLoad",()=>{
+        setTimeout(() => {
+            if(!getworld().includes("Catac")) return;
+
+            if(getpet()!=="Jellyfish"){
+                ChatLib.chat("&6[Chimera] &4&lU R NOT USING JELLYFISH");
+                Client.Companion.showTitle("&6[Chimera]","&4&lU R NOT USING JELLYFISH",0,100,20);
+            }
+        }, 5000);
+    })
+)
+
+RegisterEventListener(()=>gui.dungeon_pet_check,
+    register("chat",()=>{
+        if(!getworld().includes("Catac")) return;
+        setTimeout(() => {
+            if(getpet()==="Jellyfish"){
+                ChatLib.chat("&6[Chimera] &4&lU R USING JELLYFISH");
+                Client.Companion.showTitle("&6[Chimera]","&4&lU R USING JELLYFISH",0,100,20);
+            }
+        }, 1000);
+    }).setCriteria("Dungeon starts in 1 second.")
+)
+
+
+/*
 register("worldLoad",()=>{
     if(!gui.dungeon_pet_check ) return;
     setTimeout(() => {
@@ -24,3 +53,4 @@ register("chat",()=>{
         }
     }, 1000);
 }).setCriteria("Dungeon starts in 1 second.");
+*/

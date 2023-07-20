@@ -3,6 +3,7 @@ import PogObject from "PogData";
 export let userData = new PogObject("Chimera", {
     firstUse: true,
     current_pet:"",
+    announcement:"",
     FT :{
         x:150,
         y:150,
@@ -23,7 +24,6 @@ export let userData = new PogObject("Chimera", {
         "y" : 150,
         "scale" :1
     },
-    language : "English"
 }, "userdata.json");
 
 

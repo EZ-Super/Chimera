@@ -37,7 +37,7 @@ export default class ChestItem{
                 
                 if(search === Attribute){
                     //ChatLib.chat(search + " "+ lvl);
-                    lvl = getLevl(lvl);
+                    lvl = getLevel(lvl);
                     this.AttributesList.set(Attribute,lvl);
                 }
             });
@@ -99,7 +99,7 @@ export default class ChestItem{
     }
 }
 
-function getLevl(level){
+function getLevel(level){
     if(level ==="I") return 1;
     else if(level === "II") return 2;
     else if(level === "III") return 3;

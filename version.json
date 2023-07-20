@@ -33,10 +33,9 @@
             ]
 	},
 	{
-            "version" : "0.0.5 (Coming 7/22)",
+            "version" : "0.0.5",
             "essential":true,
             "changelog" : [
-                "M7 Dragon Timer(Maybe comming v0.0.6)",
                 "Program optimization,reduce the performance of program execution consumption",
                 "&c&lFor your account security, Chimera no longer provides \"Mark Dungeon Star Mob\" since version v0.0.5+",
                 "<Chimera 2> Comming Soon, But it maybe not free ,Because &4&l Don't forget that money can be earn, but you can earn more if u  without conscience. "

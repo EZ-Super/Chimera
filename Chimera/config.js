@@ -1,4 +1,4 @@
-import { @Vigilant, @ButtonProperty, @TextProperty, @SwitchProperty, @DecimalSliderProperty @SliderProperty, @SelectorProperty, @ColorProperty, Color } from "Vigilance";
+import { @Vigilant, @ButtonProperty, @TextProperty, @SwitchProperty, @DecimalSliderProperty ,@SliderProperty, @SelectorProperty, @ColorProperty, Color } from "Vigilance";
 
 
 @Vigilant("Chimera","Chimera mod ",{
@@ -11,7 +11,6 @@ import { @Vigilant, @ButtonProperty, @TextProperty, @SwitchProperty, @DecimalSli
 
 class gui {
 
-    mimic = new Gui()
 
     FT = new Gui()  // flare time
     CT = new Gui()  // current time
@@ -23,21 +22,21 @@ class gui {
         description: "Mimic Killed message customization",
         category: "Dungeon",
         subcategory: "Mimic",
-    })mimickilled = true;
+    })MimicKilled = true;
 
     @TextProperty({
         name:"Mimic killed message",
         description: "Mimic Killed message ",
         category : "Dungeon",
         subcategory :"Mimic"
-    })minickilledsendmessage = "";
+    })MinicKilledSendMessage = "";
 
     @SwitchProperty({
         name : "Allow party member setting allinvite",
         description : "allow party setting allinvite party , using !allinv",
         category : "Party",
         subcategory :"Always party all invite"
-    })allwayspartyallinvite = false;
+    })AllowPartyAllInvite = false;
     @SwitchProperty({
         name:"Allow party member party someone",
         description : "Party someone ,using !p {ign}",
@@ -50,7 +49,7 @@ class gui {
         description : "auto transfer party",
         category : "Party",
         subcategory : "auto transfer party"
-    })autotransfer = false;
+    })AutoTransfer = false;
 
     @SwitchProperty({
         name : "Dungeon pet check",
@@ -164,7 +163,7 @@ class gui {
         description : "Mark mob if in ice spray range",
         category : "Other",
         subcategory : "Ice spray"
-    })icespray_range = false;
+    })IceSpray_range = false;
 
     @SwitchProperty({
         name : "Fire Freeze",
@@ -180,14 +179,14 @@ class gui {
     })moveFF(){
         this.FF.open();
     }
-
+/*
     @SwitchProperty({
         name : "Mark Star Mob",
         description : "",
         category : "Dungeon",
         subcategory : "Star Mob Mark"
     })StarMob = false;
-
+*/
     @SwitchProperty({
         name : "PRECISE coordinate display",
         description : "show mob PRECISE pos",
