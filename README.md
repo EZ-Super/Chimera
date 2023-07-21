@@ -12,7 +12,7 @@ A skyblock Mod
 ![alt](https://media.discordapp.net/attachments/900668261748867082/1129432987784716368/ice.png?width=1581&height=889)
 
 ## v0.0.3 new
-* ~Mark dungeon star mob~ (remove sine v0.0.5)
+* ~Mark dungeon star mob~ (remove sine v0.0.5+)
 ![alt](https://media.discordapp.net/attachments/900668261748867082/1129743002961711214/image.png?width=1581&height=889)
 
 ## v0.0.4 new 
