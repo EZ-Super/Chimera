@@ -3,7 +3,7 @@ import {getworld} from "../../world/world"
 import {RegisterEventListener} from "../../utils/EventLinster";
 
 
-RegisterEventListener(()=>gui.MimicKilled&&getworld().includes("Catac"),
+RegisterEventListener(()=>gui.MimicKilled&&getworld()?.includes("Catac"),
     register('Entitydeath', (entity) => {
 
             if(entity.getClassName()=="EntityZombie"&&entity.getEntity().func_70631_g_() ){

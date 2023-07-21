@@ -8,8 +8,6 @@ RegisterEventListener(()=>FirstLogin,
         if(!FirstLogin) return;
         FirstLogin = false;
 
-        const MoudleMetdata = JSON.parse(FileLib.read("Chimera", "metadata.json"));
-
         let UD = request({url: "https://raw.githubusercontent.com/EZ-Super/Chimera/main/announcement.json", json: true})
             .then(data => {
                 setTimeout(() => {
@@ -48,7 +46,7 @@ RegisterEventListener(()=>FirstLogin,
 )
 
 register("command",()=>{
-    const MoudleMetdata = JSON.parse(FileLib.read("Chimera","metadata.json"));
+
     let UD = request({url:"https://raw.githubusercontent.com/EZ-Super/Chimera/main/announcement.json",json:true})
         .then(data=> {
             setTimeout(()=>{

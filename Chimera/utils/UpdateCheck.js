@@ -16,7 +16,7 @@ RegisterEventListener(()=>control,
 
                     const latestVersion = data.latestVersion;
                     const VersionLog = data.versionlog;
-                    const MoudleMetdata = JSON.parse(FileLib.read("Chimera","metadata.json"));
+                    const ModuleMetdata = JSON.parse(FileLib.read("Chimera","metadata.json"));
 
 
 
@@ -26,7 +26,7 @@ RegisterEventListener(()=>control,
                     let text = "";
                     let Essential = false;
                     for(let i = 0;i<VersionLog.length;i++){
-                        if(VersionLog[i].version === MoudleMetdata.version){
+                        if(VersionLog[i].version === ModuleMetdata.version){
                             search = true;
                             continue;
                         }
@@ -49,13 +49,13 @@ RegisterEventListener(()=>control,
                             return;
 
                     ChatLib.chat("&6&l[Chimera]&b&l Checking Version......");
-                    if(MoudleMetdata.version === latestVersion){
+                    if(ModuleMetdata.version === latestVersion){
                         ChatLib.chat("&6&l[Chimera]&b&l Your version is lastest");
                         return;
                     }
 
-                    ChatLib.chat(`&6&l[Chimera]&b&l your mod version ${MoudleMetdata.version} and lastest version is ${latestVersion}`);
-                    Client.Companion.showTitle("&6[Chimera] &4Update Checker",`&bYour mod version ${MoudleMetdata.version} and lastest version is ${latestVersion}`,0,100,20);
+                    ChatLib.chat(`&6&l[Chimera]&b&l your mod version ${ModuleMetdata.version} and lastest version is ${latestVersion}`);
+                    Client.Companion.showTitle("&6[Chimera] &4Update Checker",`&bYour mod version ${ModuleMetdata.version} and lastest version is ${latestVersion}`,0,100,20);
                     ChatLib.chat("&7&lVersion change log:")
 
 
