@@ -41,6 +41,16 @@
                 "<Chimera 2> Comming Soon, But it maybe not free ,Because &4&l Don't forget that money can be earn, but you can earn more if u  without conscience. "
 		
             ]
+        },
+	{
+            "version" : "0.0.5.2",
+            "essential":false,
+            "changelog" : [
+        	"&c&l感謝您的支持與下載,經過兩個月的停滯 chimera 將於2023/11/19 13:45 (GMT+8)過後 \"永久\"停止更新 \n",
+        	"&e&lThank you for your support and downloads. After two months of rest, Chimera will \"no longer updates\" after 13:45 on 2023/11/19 (GMT+8).\n",
+        	"&e&l多謝你嘅支持同下載。經過兩個月嘅休息後，Chimera 將於2023年11月19日13:45 (GMT+8)之後「唔再更新」。\n",
+		
+            ]
         }
     ]
 }
