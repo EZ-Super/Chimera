@@ -2,7 +2,7 @@
 A skyblock Mod 
 
 # Important !!!
-* ❗ this mod no longer update *
+* *❗ this mod no longer update *
 
 ## What's this mod do?
 * Helping people display the flare or Power Orb . 
